@@ -1,6 +1,6 @@
 # Toast-Notifications
-Toast notifications that show up at the bottom right corner of the screen when you click on a button.
-<br>
+**Toast notifications that show up at the bottom right corner of the screen when you click on a button.**
+<br><br>
 When you click on the <kbd>Show Notification</kbd> button on the screen, toast notifications will pop up at the bottom right corner of the screen with an animated effect.<br><br>
 After sometime the toast notifications will fade away with an animated effect.<br><br>
 The demo is live at https://therealrajan.github.io/Toast-Notifications/ <br><br>
