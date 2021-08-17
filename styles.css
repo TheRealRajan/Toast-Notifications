@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --light: #f7fff7;
+  --red: #ff8585;
+  --green: #7eff89;
+  --yellow: #efff93;
+  --blue: #76faf1;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #323031;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.btn {
+  background-color: #ececec;
+  color: #211103;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.96);
+}
+
+.toasts {
+  position: fixed;
+  bottom: 2rem;
+  right: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  color: #000;
+  font-size: 0.9rem;
+  border-radius: 500px;
+  padding: 0.3rem 0.8rem;
+  margin: 0.5rem;
+  transition: all 2s ease-in-out;
+  animation: shrink 1s ease-in 2s, grow 0.5s ease;
+}
+
+.toast.info {
+  background-color: var(--green);
+}
+.toast.message {
+  background-color: var(--yellow);
+}
+.toast.error {
+  background-color: var(--red);
+}
+.toast.success {
+  background-color: var(--blue);
+}
+
+@keyframes shrink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes grow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
